@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Campus Customs | App Check</title>
+  <style>
+    :root { color-scheme: light; font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #eef5fb; color: #102a48; line-height: 1.5; }
+    header { background: #102a48; color: #f4fbff; padding: 2.5rem max(1.25rem, calc((100vw - 900px) / 2)); }
+    header::before { color: #8ef4e3; content: "CAMPUS CUSTOMS  //  SITE TESTING"; display: block; font-size: .72rem; font-weight: 800; letter-spacing: .16em; margin-bottom: .8rem; }
+    h1 { font-size: clamp(2rem, 5vw, 3rem); line-height: 1.1; margin: 0 0 .6rem; }
+    header p { color: #cee5f5; margin: 0; max-width: 42rem; }
+    main { margin: 0 auto; max-width: 940px; padding: 2rem 1.25rem 4rem; }
+    section { background: #fff; border: 1px solid #cbdcea; border-left: 5px solid #24b9c4; border-radius: 14px; box-shadow: 0 8px 26px #17375212; margin-bottom: 1.5rem; padding: clamp(1rem, 3vw, 1.7rem); }
+    .check-number { color: #25718b; font-size: .73rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+    h2 { font-size: clamp(1.3rem, 3vw, 1.7rem); line-height: 1.2; margin: .35rem 0 1rem; }
+    figure { margin: 0; }
+    .screenshot-frame { align-items: center; background: linear-gradient(135deg, #e5f6f7, #f1f6ff); border: 2px dashed #8ab8c8; border-radius: 10px; display: flex; justify-content: center; min-height: 220px; overflow: hidden; }
+    .screenshot-frame img { display: block; height: auto; max-width: 100%; }
+    .inventory-frame img { width: min(100%, 430px); }
+    .screenshot-frame img[hidden] { display: none; }
+    figcaption { color: #365e73; font-size: .95rem; margin-top: .85rem; }
+    .placeholder { color: #365e73; padding: 2rem; text-align: center; }
+    .placeholder strong { display: block; font-size: 1rem; margin-bottom: .35rem; }
+    .placeholder code { background: #d9ebf0; border-radius: 4px; font-size: .82rem; padding: .2rem .35rem; word-break: break-all; }
+    footer { color: #486c82; font-size: .85rem; margin-top: 1.5rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Campus Customs app check</h1>
+    <p>Problem 11 live-site evidence: three screenshots with short captions.</p>
+  </header>
+  <main>
+    <section aria-labelledby="inventory-heading">
+      <span class="check-number">Check 1</span>
+      <h2 id="inventory-heading">Chat checks an item’s stock and price</h2>
+      <figure>
+        <div class="screenshot-frame inventory-frame">
+          <img src="app_check_images/inventory.png" alt="Chat showing database-backed inventory and price" onload="this.nextElementSibling.hidden = true" onerror="this.hidden = true">
+          <div class="placeholder"><strong>Screenshot pending</strong><code>app_check_images/inventory.png</code></div>
+        </div>
+        <figcaption>I asked the chatbot, “What is the cost and stock for the Yale Mom crewneck?” and it told me the cost, total stock, and size options and their respective stocks</figcaption>
+      </figure>
+    </section>
+
+    <section aria-labelledby="search-heading">
+      <span class="check-number">Check 2</span>
+      <h2 id="search-heading">Category chat search shows product cards on the page</h2>
+      <figure>
+        <div class="screenshot-frame">
+          <img src="app_check_images/dynamic_search_results_card.png" alt="Hoodie product cards shown on the page after a category question in chat" onload="this.nextElementSibling.hidden = true" onerror="this.hidden = true">
+          <div class="placeholder"><strong>Screenshot pending</strong><code>app_check_images/dynamic_search_results_card.png</code></div>
+        </div>
+        <figcaption>I asked the chatbot, “can you show me all the hoodies you have?” and it showed all the possibilities in the chat and added a “Found Through Chat: Products that match your question” section on the site</figcaption>
+      </figure>
+    </section>
+
+    <section aria-labelledby="usability-heading">
+      <span class="check-number">Check 3 · Problem 9 usability feature</span>
+      <h2 id="usability-heading">Catalogue search and main-color filter</h2>
+      <figure>
+        <div class="screenshot-frame">
+          <img src="app_check_images/usability_improvement.png" alt="Catalogue controls filtering 102 products by dusty coral main color" onload="this.nextElementSibling.hidden = true" onerror="this.hidden = true">
+          <div class="placeholder"><strong>Screenshot pending</strong><code>app_check_images/usability_improvement.png</code></div>
+        </div>
+        <figcaption>I added a filter section to the site so it is easier for shoppers to locate products of interests out of 102 total products. The screenshot shows filtering the items by “dusty coral”</figcaption>
+      </figure>
+    </section>
+
+    <footer>All three checks include screenshots and captions. This page can be opened directly from your files.</footer>
+  </main>
+</body>
+</html>

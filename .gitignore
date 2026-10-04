@@ -1,0 +1,26 @@
+# Local Python environments and generated files
+.venv/
+**/.venv/
+__pycache__/
+**/__pycache__/
+*.py[cod]
+.cache/
+
+# Local secrets; keep the safe template in the repository
+.env
+.env.*
+!.env.example
+
+# Local data pack: database, source product photos, and generated cutouts
+data/
+data.zip
+*.db
+*.sqlite
+*.sqlite3
+
+# Frontend dependencies and build output
+frontend/node_modules/
+frontend/dist/
+
+# OS metadata
+.DS_Store
